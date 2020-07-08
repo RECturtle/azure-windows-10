@@ -1,10 +1,10 @@
 {
   "builders": [{
     "type": "azure-arm",
-    "client_id": var.client_id,
-    "client_secret": var.client_secret,
-    "tenant_id": var.tenant_id,
-    "subscription_id": var.subscription_id,
+    "client_id": "",
+    "client_secret": "",
+    "tenant_id": "",
+    "subscription_id": "var.subscription_id",
     "managed_image_resource_group_name": "EnterYourOwnResourceGroup",
     "managed_image_name": "EnterYourOwnNameHere",
 
@@ -50,7 +50,6 @@
     {
       "type": "powershell",
         "inline": [
-          " # NOTE: the following *3* lines are only needed if the you have installed the Guest Agent.",
           "  while ((Get-Service RdAgent).Status -ne 'Running') { Start-Sleep -s 5 }",
           "  while ((Get-Service WindowsAzureGuestAgent).Status -ne 'Running') { Start-Sleep -s 5 }",
   
