@@ -5,8 +5,8 @@
     "client_secret": "",
     "tenant_id": "",
     "subscription_id": "",
-    "managed_image_resource_group_name": "EnterYourOwnResourceGroup",
-    "managed_image_name": "EnterYourOwnNameHere",
+    "managed_image_resource_group_name": "",
+    "managed_image_name": "",
 
     "os_type": "Windows",
     "image_publisher": "MicrosoftWindowsDesktop",
@@ -20,12 +20,12 @@
     "winrm_username": "packer",
 
     "azure_tags": {
-        "dept": "Engineering",
-        "task": "Image deployment"
+        "dept": "",
+        "task": ""
     },
 
-    "location": "East US",
-    "vm_size": "Standard_D4s_v3"
+    "location": "",
+    "vm_size": ""
   }],
   "provisioners": [{
       "type": "powershell",
@@ -45,7 +45,7 @@
       "type": "windows-update"
     },
     {
-      "type": "windows-restart",
+      "type": "windows-restart"
     },
     {
       "type": "powershell",
